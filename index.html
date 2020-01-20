@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body ng-app="myApp">
+    <a ui-sref="apartments" ui-sref-active="active">Apartments</a>
+    <a ui-sref="about" ui-sref-active="active">About</a>
+    <div ui-view></div>  
+
+
+    <!--Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script src="node_modules/@uirouter/angularjs/release/angular-ui-router.js"></script>
+    <script src="app.js"></script>
+
+    <!-- Controller injection -->
+    <script src="templates/apartments/ApartmentsController.js"></script>
+</body>
+</html>

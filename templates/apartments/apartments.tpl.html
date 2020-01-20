@@ -1,0 +1,14 @@
+<div>
+    <table border="1">
+        <tr>
+            <th>Nombre</th>
+            <th>Codigo</th>
+            <th>Region</th>
+        </tr>
+        <tr ng-repeat="item in result.data">
+            <td>{{item.name}}</td>
+            <td>{{item.alpha3Code}}</td>
+            <td>{{item.region}}</td>
+        </tr>
+    </table>
+</div>
