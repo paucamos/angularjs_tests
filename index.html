@@ -7,8 +7,9 @@
     <title>Document</title>
 </head>
 <body ng-app="myApp">
-    <a ui-sref="apartments" ui-sref-active="active">Apartments</a>
-    <a ui-sref="about" ui-sref-active="active">About</a>
+    <a ui-sref="home" ui-sref-active="active">Home</a>
+    <a ui-sref="apartments" ui-sref-active="active">Countries</a>
+    <a ui-sref="clients" ui-sref-active="active">Clients</a>
     <div ui-view></div>  
 
 
@@ -19,5 +20,6 @@
 
     <!-- Controller injection -->
     <script src="templates/apartments/ApartmentsController.js"></script>
+    <script src="templates/clients/ClientsController.js"></script>
 </body>
 </html>

@@ -7,8 +7,8 @@
         $locationProvider.hashPrefix('');  
         $urlRouterProvider.otherwise('/home');
 
-        $stateProvider.state('default', {  
-            url: '/',              
+        $stateProvider.state('home', {  
+            url: '/home',              
             template: '<br>Index Main',  
             controller: 'HomeCtrl'  
         });
@@ -16,6 +16,11 @@
             url: '/apartments',              
             templateUrl: 'templates/apartments/apartments.tpl.html',  
             controller: 'ApartmentsController'  
+        });
+        $stateProvider.state('clients', {
+            url: '/clients',              
+            templateUrl: 'templates/clients/clients.tpl.html',  
+            controller: 'ClientsController' 
         });
         
     }]);
